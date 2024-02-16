@@ -402,11 +402,35 @@ Start by defining your styles for small screens first, and then use media querie
 
 
 /* Our CSS */
+.row {
+    display: flex;
+}
 .container {
     max-width: 80%;
     margin: 0 auto;
 }
 
+
+
+
+
+
+
+
+
+
+.featuretitle {
+    display: flex;
+    justify-content: space-between;
+}
+.featuretitle button.Seeall {
+    background-color: black;
+    color: white;
+    font-size: 24px;   
+}
+div.projects img.featureImage{
+    width: 100%;
+}
 
 footer {
     background-color: rgb(235, 235, 235);
@@ -414,7 +438,7 @@ footer {
     position: relative;
 }
 footer h3 {
-    margin-top: 10px;
+    margin-top: 59px;
 }
 footer .footer_logo {
     background-color: #000;

@@ -51,9 +51,14 @@ import {
           <section className="project-card">
             <img src={pic1} alt="pic" />
           </section>
-            <TheHeader title="Featured" menuItems={["see all"]}/>   
-            <section>
-                <div className="container projects">
+             
+            <section className="feature">
+                <div className="row featuretitle">
+                  <h2>Feature</h2>
+                  <button className="Seeall"> See All </button>
+                </div>
+
+                <div className=" projects">
                     <ul className="projects__list">  
                                 <li className="project-list__item">
                                     <article class="project-card">
@@ -105,8 +110,7 @@ import {
             </section>
             <footer>
               <h3><a href="/" rel="home" className="footer_logo">Logo</a></h3>
-                <ul className="footer__menu">
-                    
+                <ul className="footer__menu">  
                     <li><a className="header__menu-link" href="#x.com">Portfolio</a></li>
                     <li><a className="header__menu-link" href="#linkedin">About</a></li>
                     <li><a className="header__menu-link" href="#facebook">Contact</a></li>
