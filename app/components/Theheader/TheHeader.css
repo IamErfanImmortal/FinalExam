@@ -1,0 +1,45 @@
+.header {
+    background: var(--bkg-color1);
+}
+
+.header__logo {
+    text-decoration: none; /* Remove underline for the link */
+    color: #000000; /* Text color */
+    padding:var(--size-120) ;
+}
+
+.header__nav {
+    margin-top: var(--size-80); /* Add some space between logo and menu */
+}
+
+.header__menu { 
+    display: flex; /* Flexbox is a one-dimensional layout method for laying out items in rows or columns */
+    flex-flow: column wrap; /* The flex items (list items) will be laid out in a row from left to right */
+    justify-content: flex-end;
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+    margin: 0;
+    /*border:1px solid #ff00ff;*/
+}
+.header__menu-item {
+    background-color: var(--secondary-color);
+    border-radius: 4px; /* Rounded corners for each menu item */
+    margin-bottom: 2px;
+    flex: 1;
+    /*width: calc(100% / 4); */ /* Each link takes up equal portion of available width */
+    text-align: center; /* Position the text in the center */
+}
+
+.header__menu-link {
+    display: block; /* Make the link a block to fill the menu item */
+    padding: var(--size-40); /* Add padding to make it look like a button */
+    text-decoration: none; /* Remove underline for the link */
+    color: var(--primary-text-color); /* Text color */
+}
+
+@media (min-width: 601px) {  
+    .header__menu {
+        flex-flow: row wrap; 
+        justify-content: space-around;
+    }
+}
