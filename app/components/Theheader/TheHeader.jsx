@@ -4,9 +4,7 @@ export default function TheHeader({title, menuItems}) {
             <nav className="header__nav">
             
                 <ul className="header__menu">
-                    <h3><a href="#" rel="home" className="header__logo">{title}
-                    <img src={require("../../images/logo.png")} alt="" />
-                    </a></h3>
+                    <h3><a href="/" rel="home" className="header__logo">{title}</a></h3>
                     {menuItems.map(name => {
                         return <li key={name} className="header__menu-item"><a className="header__menu-link" href={name}>{name}</a></li>
                     })}   
