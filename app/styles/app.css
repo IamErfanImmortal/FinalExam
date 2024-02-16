@@ -148,7 +148,7 @@ body.dark-theme {
 body {
     max-width: 1200px;
     margin: 0 auto;
-    background-color: var(--bkg-color1);
+    /* background-color: var(--bkg-color1); */
 
     /* line-height should never be 1, the linebox will be smaller than the content-area */
     line-height: 1.5;
@@ -163,7 +163,7 @@ a, p {
     color: var(--primary-text-color);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h3, h4, h5, h6 {
     color: var(--secondary-text-color);
 }
 
@@ -190,7 +190,7 @@ section header, section .container  {
 }
 
 .header {
-    background: var(--bkg-color1);
+    /* background: var(--bkg-color1); */
 }
 
 .header__logo {
@@ -305,7 +305,7 @@ button {
     flex-direction: row;
     justify-content: space-between;
     position: relative;
-    margin-inline : 120px;
+    margin-inline : 24px;
     color: var(--secondary-text-color);
 }
 .project-card__caption{
@@ -347,7 +347,7 @@ footer a {
     justify-content: space-evenly;
     margin: var(--size-60);
     list-style: none;
-    background-color: var(--bkg-color3);
+    /* background-color: var(--bkg-color3); */
 }
 
 /*
@@ -480,6 +480,8 @@ footer button {
     display: flex;
     justify-content: space-between;
     position: relative;
+    list-style: none;
+    margin-top: 24px;
 }
 .feature .featurecards img {
     height: 550px;

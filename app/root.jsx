@@ -8,14 +8,17 @@ import {
   import styles from "./styles/app.css";
   import TheHeader from "./components/TheHeader/TheHeader";  
   import TheHeaderStyles from "./components/TheHeader/TheHeader.css";
-  import pic1 from "./Images/tlou.jpg"
-  import pic2 from "./Images/pic2.jpg"
-  import pic3 from "./Images/pic3.jpg"
+  import pic1 from "./Images/car1.jpg"
+  import pic2 from "./Images/car2.jpg"
+  import pic3 from "./Images/car4.jpg"
+  import pic4 from "./Images/car.png"
+  import pic5 from "./Images/car2.png"
   import TheFooter from "./components/TheFooter";
   import Figure from "./components/Figure";
   import Article from "./components/Article";
   import PicLoop from "./components/PicLoop";
   import welcome from "./Images/welcomeimage.png"
+  import ButtonDarkMode from "./components/ButtonDarkMode";
   
   export const meta = () => [
     {
@@ -36,10 +39,9 @@ import {
   export default function App() {
     const menuItems = ['Portfolio', 'About',"Contact"];
     const pics = [
-        {title:"Project 1",url:require("./Images/tlou.jpg"),altt:"pic1"},
-        {title:"Project 2",url:require("./Images/pic2.jpg"),altt:"pic2"},
-        {title:"Project 3",url:require("./Images/pic3.jpg"),altt:"pic3"}
-
+        {title:"Project 1",url:require("./Images/car1.jpg"),altt:"pic1"},
+        {title:"Project 2",url:require("./Images/car2.jpg"),altt:"pic2"},
+        {title:"Project 3",url:require("./Images/car4.jpg"),altt:"pic3"}
     ]
     return (
       <html>
@@ -52,10 +54,11 @@ import {
           <Links />
         </head>
         <body>
+          <ButtonDarkMode/>
             <TheHeader title="Erfan" menuItems={menuItems}/>
           <Outlet />
           <section className="project-card">
-            <img src={pic1} alt="pic" />
+            <img src={pic5} alt="pic" />
           </section>
           <main class="welcome">
             <div class="welcometext">
@@ -66,7 +69,7 @@ import {
             <img src={welcome} alt="" class="welcomeimage"/>
         </main>
           <aside class="project-card">
-            <img src={pic1} alt="pic"></img>
+            <img src={pic4} alt="pic"></img>
             <div class="aboutuscontent">
                 <h2 class="aboutustext">Small Team,</h2>
                 <h2 class="aboutustext">big ideas</h2>
@@ -76,7 +79,7 @@ import {
           <section className="feature">
             <div class="featuretitle">
                   <h2>Featured</h2>
-                  <button>See All</button>
+                  <a href=""><button>See All</button></a>
             </div> 
             <div className="futurecards">
               <PicLoop pics={pics}/>
