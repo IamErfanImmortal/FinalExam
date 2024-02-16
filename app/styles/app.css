@@ -406,6 +406,27 @@ Start by defining your styles for small screens first, and then use media querie
     max-width: 80%;
     margin: 0 auto;
 }
-footer {
 
+
+footer {
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    position: relative;
+}
+footer h3 {
+    margin-top: 10px;
+}
+footer .footer_logo {
+    background-color: #000;
+    padding: 62px;
+    color: #fff;
+    text-decoration: none;
+}
+footer button {
+    position: absolute;
+    top: 76px;
+    right: 30px;
+    background-color: black;
+    color: white;
+    font-size: 24px;
 }

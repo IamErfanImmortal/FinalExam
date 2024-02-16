@@ -28,6 +28,7 @@
     flex: 1;
     /*width: calc(100% / 4); */ /* Each link takes up equal portion of available width */
     text-align: center; /* Position the text in the center */
+    align-items: start;
 }
 
 .header__menu-link {
@@ -42,4 +43,12 @@
         flex-flow: row wrap; 
         justify-content: space-around;
     }
+}
+
+
+
+
+.myheader__menu {
+    list-style: none;
+    display: flex;
 }

@@ -40,7 +40,7 @@ import {
           <Links />
         </head>
         <body className="container">
-            <TheHeader title="Hossein" menuItems={menuItems}/>
+            <TheHeader title="Logo" menuItems={menuItems}/>
           <Outlet />
           <section className="project-card">
             <img src={pic1} alt="pic" />
@@ -104,8 +104,9 @@ import {
                 </div>
             </section>
             <footer>
+              <h3><a href="/" rel="home" className="footer_logo">Logo</a></h3>
                 <ul className="footer__menu">
-                    <h3><a href="/" rel="home" className="header__logo">Hossein</a></h3>
+                    
                     <li><a className="header__menu-link" href="#x.com">Portfolio</a></li>
                     <li><a className="header__menu-link" href="#linkedin">About</a></li>
                     <li><a className="header__menu-link" href="#facebook">Contact</a></li>
