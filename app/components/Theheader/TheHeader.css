@@ -1,5 +1,8 @@
 .header {
-    background: var(--bkg-color1);
+    grid-area: header;
+    /* background-color: red; */
+    /* grid-column-start: 1; grid-column-end: 2; grid-row-start: 5; grid-row-end: 6; */
+    display: flex;
 }
 
 .header__logo {
@@ -13,22 +16,15 @@
 }
 
 .header__menu { 
-    display: flex; /* Flexbox is a one-dimensional layout method for laying out items in rows or columns */
-    flex-flow: column wrap; /* The flex items (list items) will be laid out in a row from left to right */
-    justify-content: flex-end;
-    list-style: none; /* Remove default list styles */
-    padding: 0; /* Remove default padding */
-    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     /*border:1px solid #ff00ff;*/
 }
 .header__menu-item {
-    background-color: var(--secondary-color);
-    border-radius: 4px; /* Rounded corners for each menu item */
-    margin-bottom: 2px;
-    flex: 1;
-    /*width: calc(100% / 4); */ /* Each link takes up equal portion of available width */
-    text-align: center; /* Position the text in the center */
-    align-items: start;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .header__menu-link {
@@ -43,12 +39,4 @@
         flex-flow: row wrap; 
         justify-content: space-around;
     }
-}
-
-
-
-
-.myheader__menu {
-    list-style: none;
-    display: flex;
 }

@@ -86,11 +86,11 @@ body {
     --primary-text-color: #222;
     --secondary-text-color: #222;
     --surface-color: #fff;
-    /* --bkg-color1: pink;
+    --bkg-color1: pink;
     --bkg-color2: lightblue;
     --bkg-color3: orange;
     --bkg-color4: green;
-    --bkg-color5: purple; */
+    --bkg-color5: purple;
 }
 
 body.dark-theme {
@@ -146,6 +146,8 @@ body.dark-theme {
 }
 
 body {
+    max-width: 1200px;
+    margin: 0 auto;
     background-color: var(--bkg-color1);
 
     /* line-height should never be 1, the linebox will be smaller than the content-area */
@@ -163,6 +165,10 @@ a, p {
 
 h1, h2, h3, h4, h5, h6 {
     color: var(--secondary-text-color);
+}
+
+body > header {
+    padding:16px;
 }
 
 section {
@@ -298,9 +304,12 @@ button {
     display: flex; /* Flexbox is a one-dimensional layout method for laying out items in rows or columns */
     flex-direction: row;
     justify-content: space-between;
-
+    position: relative;
     margin-inline : 120px;
     color: var(--secondary-text-color);
+}
+.project-card__caption{
+    position: absolute;
 }
 .project-card__figure div {
     margin-left: var(--size-60);
@@ -399,58 +408,107 @@ Start by defining your styles for small screens first, and then use media querie
     }
     
 }
-
-
-/* Our CSS */
-.row {
-    display: flex;
-}
-.container {
-    max-width: 80%;
-    margin: 0 auto;
-}
-
-
-
-
-
-
-
-
-
-
-.featuretitle {
-    display: flex;
-    justify-content: space-between;
-}
-.featuretitle button.Seeall {
-    background-color: black;
-    color: white;
-    font-size: 24px;   
-}
-div.projects img.featureImage{
-    width: 100%;
-}
-
-footer {
-    background-color: rgb(235, 235, 235);
+main {
+    grid-area: main;
+    /* background-color: rgb(51, 255, 0); */
     display: flex;
     position: relative;
 }
-footer h3 {
-    margin-top: 59px;
+main .welcometext h4 {
+    position: absolute;
+    top: -69px;
+    font-size: 150px;
 }
-footer .footer_logo {
-    background-color: #000;
-    padding: 62px;
-    color: #fff;
-    text-decoration: none;
+main .welcometext h2 {
+    font-size: 40px;
+    margin-top: 80px;
+    margin-left: 80px;
+}
+main .welcometext p {
+    font-size: 16px;
+    margin-left: 80px;
+}
+main .welcomeimage {
+    height: 400px;
+}
+footer {
+    grid-area: footer;
+    background-color: rgb(213, 213, 213);
+    display: flex;
+    position: relative;
+}
+footer img {
+    height: 200px;
+}
+footer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+footer ul li {
+    color:black;
+    margin-left: 32px;
 }
 footer button {
     position: absolute;
-    top: 76px;
-    right: 30px;
+    right: 0px;
+    top: 66px;
+    color: #f2f2f2;
     background-color: black;
+    font-size: 32px;
+    padding: 20px;  
+}
+.feature {
+    grid-area: feat;
+    /* background-color: rgb(84, 5, 254); */
+}
+.feature .featuretitle {
+    display: flex;
+    justify-content: space-between;
+}
+.feature .featuretitle h2 {
+    color: black;
+    font-size: 72px;
+}
+.feature .featuretitle button {
+    color: #f2f2f2;
+    background-color: black;
+    font-size: 32px;
+    padding: 20px;    
+}
+.feature .featurecards {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.feature .featurecards img {
+    height: 550px;
+}
+.feature .featurecards figcaption {
+    position: absolute;
+    left: 60px;
+    bottom: 50px;
     color: white;
-    font-size: 24px;
+    font-size: 32px;
+}
+aside {
+    grid-area: aside;
+    /* background-color: rgb(28, 5, 5); */
+    position: relative;
+}
+aside .aboutuscontent {
+    position: absolute;
+    left: 50px;
+    top:50px;
+}
+aside .aboutuscontent h2 {
+    font-size: 90px;
+    color: #f2f2f2;
+}
+aside .aboutuscontent  button {
+    margin-top: 20px;
+    color: #f2f2f2;
+    background-color: black;
+    font-size: 32px;
+    padding: 20px;
 }
