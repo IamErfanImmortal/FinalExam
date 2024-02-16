@@ -1,0 +1,27 @@
+/* Slider.css */
+.slick-prev,
+.slick-next {
+  font-size: 24px;
+  color: #000;
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  color: #000;
+  opacity: 0.8;
+}
+
+.slick-dots {
+  bottom: 0;
+}
+
+.slick-dots li button:before {
+  font-size: 14px;
+  color: #000;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #000;
+}
